@@ -30,7 +30,7 @@ CAT_EOF
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get -y update
-apt-get -y install wget ftp unzip
+apt-get -y install wget unzip
 
 install_oci
 pushd debs_ubuntu24

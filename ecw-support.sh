@@ -3,7 +3,6 @@
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get -y update
-apt-get -y install wget ftp unzip
 
 pushd debs_ubuntu24
 	apt-get -y install ./*.deb
