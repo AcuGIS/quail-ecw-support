@@ -4,9 +4,15 @@ This repository contains installers for additional format supports.
 
 ## ECW Support
 
-Run ECW installers....
+git clone https://github.com/AcuGIS/quail-formats.git
+cd quail-formats
+chmod +x ecw-support.sh
+./ecw-support.sh
 
 
 ## Oracle Support
 
-Run Oracle Insteller....
+git clone https://github.com/AcuGIS/quail-formats.git
+cd quail-formats
+chmod +x oracle-support.sh
+./oracle-support.sh
