@@ -7,9 +7,7 @@ This repository contains installers for additional format support.
 ```bash
 git clone https://github.com/AcuGIS/quail-formats.git
 cd quail-formats
-chmod +x ecw-support.sh
 ./ecw-support.sh
-rm -rf quail-formats
 
 ```
 
@@ -21,7 +19,6 @@ git clone https://github.com/AcuGIS/quail-formats.git
 cd quail-formats
 chmod +x ecw-oracle-support.sh
 ./ecw-oracle-support.sh
-rm -rf quail-formats
 
 ```
 
