@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-FTP_PASSWORD=''
-
 function install_oci(){
 	mkdir /opt/oracle
 
@@ -34,21 +32,12 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get -y update
 apt-get -y install wget ftp unzip
 
-if [ -z $"{FTP_PASSWORD}" ]; then
-	echo "Error: FTP_PASSWORD not set!"; exit 1;
-fi
-
-BUILD='ecw'
-if [ $1 == '--with-oci' ]; then
-	if [ ! -d /opt/oracle/instantclient_23_6 ]; then
-		install_oci
-	fi
-	BUILD='ecw_oci'
-fi
-
-mkdir gdal_${BUILD}_3.8.4_ubuntu24
-pushd gdal_${BUILD}_3.8.4_ubuntu24
+install_oci
+pushd debs_ubuntu24
 	apt-get -y install ./*.deb
+	pushd gdal_ecw_oci_3.8.4
+		apt-get -y install ./*.deb
+	popd
 popd
 
 # hold package to avoid overwriteing on updates
