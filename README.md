@@ -9,6 +9,7 @@ git clone https://github.com/AcuGIS/quail-formats.git
 cd quail-formats
 chmod +x ecw-support.sh
 ./ecw-support.sh
+rm -rf quail-formats
 
 ```
 
@@ -20,5 +21,6 @@ git clone https://github.com/AcuGIS/quail-formats.git
 cd quail-formats
 chmod +x oracle-support.sh
 ./oracle-support.sh
+rm -rf quail-formats
 
 ```
