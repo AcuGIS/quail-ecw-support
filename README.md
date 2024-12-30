@@ -17,7 +17,6 @@ cd quail-formats
 ```bash
 git clone https://github.com/AcuGIS/quail-formats.git
 cd quail-formats
-chmod +x ecw-oracle-support.sh
 ./ecw-oracle-support.sh
 
 ```
