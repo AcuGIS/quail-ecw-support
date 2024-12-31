@@ -12,14 +12,16 @@ cd quail-formats
 ```
 
 
-## Oracle Support
+Verify installation
 
-```bash
-git clone https://github.com/AcuGIS/quail-formats.git
-cd quail-formats
-./ecw-oracle-support.sh
+```console
+
+$ gdal_translate --formats | grep ECW
+  ECW -raster- (rw): ERDAS Compressed Wavelets (SDK 3.x)
+  JP2ECW -raster,vector- (rw+v): ERDAS JPEG2000 (SDK 3.x)
 
 ```
+
 
 
 ## Build from source
