@@ -50,7 +50,7 @@ if (is_dir($directory)) {
                 // Truncate long content for display
                 $fileContentDisplay = (strlen($fileContent) > 50) ? substr($fileContent, 0, 50) . '...' : $fileContent;
 
-                echo "<li><a href='" . ADMIN_PATH . htmlspecialchars($fileNameWithoutExt). ".php" . "' target='_blank'>" . $fileContentDisplay . "</a></li>";
+                echo "<li><a href='" . ADMIN_PATH . htmlspecialchars($fileNameWithoutExt). ".php" . "''>" . $fileContentDisplay . "</a></li>";
             } else {
                 echo "";
             }
@@ -65,19 +65,13 @@ if (is_dir($directory)) {
 ?>
 
 <ul>
-  
-	<?php if(is_file(ADMIN_PATH.'qfield-plugin.php')) { ?>
-		<li><a class="reference internal" href="<?=ADMIN_PATH?>qfield-plugin.php">QFieldCloud Plugin</a></li>
-	<?php } ?>
+	
 </ul>
   </div>
-
 <div>
     <h3>Access</h3>
 <ul>
 <li>
-
-
 <?php
 	if(isset($_SESSION[SESS_USR_KEY])){
 		if($_SESSION[SESS_USR_KEY]->accesslevel == 'Admin'){
@@ -94,7 +88,6 @@ if (is_dir($directory)) {
 </li>
 </ul>
   </div>
-
 
   <div>
     <h3>Documentation</h3>
