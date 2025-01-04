@@ -1,4 +1,4 @@
-# Quail Additional Formats
+# Quail ECW Support
 
 This repository contains installers for additional format support.
 
