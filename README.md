@@ -5,8 +5,8 @@ This repository contains installer for ECW support.
 ## ECW Support
 
 ```bash
-git clone https://github.com/AcuGIS/quail-formats.git
-cd quail-formats
+git clone https://github.com/AcuGIS/quail-ecw-support.git
+cd ecw-support
 ./ecw-support.sh
 
 ```
@@ -27,7 +27,7 @@ $ gdal_translate --formats | grep ECW
 ## Build from source
 If you want to build a newer version of GDAL, or link agains different Oracle Client version, you can run the build script. It will compile and install current Ubuntu 24 GDAL version. All .deb files will be stored in /root.
 ```bash
-git clone https://github.com/AcuGIS/quail-formats.git
+git clone https://github.com/AcuGIS/quail-ecw-support.git
 cd quail-formats
 chmod +x gdal_ecw_build_ubuntu24.sh
 ./gdal_ecw_build_ubuntu24.sh
